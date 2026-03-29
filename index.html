@@ -48,4 +48,100 @@
         .logo-area span {
             color: var(--accent-blue);
             font-weight: 700;
-            font-size:
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            color: var(--text-gray);
+            line-height: 1.7;
+            font-size: 1.05em;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .description strong {
+            color: var(--primary-dark);
+        }
+
+        /* Botões de Ação */
+        .action-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        /* Ajuste para Mobile */
+        @media (max-width: 480px) {
+            .action-group {
+                grid-template-columns: 1fr;
+            }
+            .bio-card {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-card">
+        <div class="logo-area">
+            <h1>3D Ilha</h1>
+            <span>Inovação • Tecnologia • Design</span>
+        </div>
+        
+        <div class="description">
+            <p>
+                <strong>Bem-vindo à 3D Ilha.</strong> Onde a imaginação ganha dimensão. 
+                Somos um estúdio focado em oferecer soluções criativas e funcionais para quem busca exclusividade. 
+            </p>
+            <p>
+                Do conceito digital ao objeto em mãos, cercamos seu projeto com as melhores práticas de 
+                <strong>impressão e design</strong>, garantindo que cada detalhe seja único.
+            </p>
+        </div>
+
+        <div class="action-group">
+            <a href="https://wa.me/5548999999999" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            
+            <a href="https://instagram.com/3dilha.com.br" target="_blank" class="btn btn-instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
